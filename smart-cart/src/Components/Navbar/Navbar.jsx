@@ -1,21 +1,42 @@
+import "./Navbar.css";
 import logo from "./../Assests/logo.png";
+import cartLogo from "./../Assests/cart_icon.png";
 import { Link } from "react-router-dom";
-import { BrowserRouter as Router, Routes,Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 const Navbar = () => {
+  let count = 0;
+  let [menu,setMenu] = useState("");
+  console.log("value of menu is", menu);
+  const navigate = useNavigate();
+
+  const handleClickButton = () =>{
+    navigate('/signin');
+  }
+
+  const handleClickCart = () =>{
+    navigate('/cart');
+  }
   return (
     <>
       <nav>
-        <Router>
+        
           {/* {to use imported logo } */}
-          <img src={logo} alt="Logo"  />
+          <img src={logo} alt="Logo" />
           <h1>SmartCart</h1>
-          <Link>Shop All</Link>
-          <Link>Shop Men</Link>
-          <Link>Shop Women</Link>
-          <Link>Shop Kids</Link>
-          <Link>Contact Us</Link>
-          <button>Login</button>
-        </Router>
+          <div className="links">
+            <Link className="nav-link" onClick={()=> setMenu("Shop All")} to = "/">Shop All {menu === "Shop All"? <hr/> : <></>}</Link>
+            <Link className="nav-link" onClick={()=> setMenu("Shop Men")} to = "/men">Shop Men {menu === "Shop Men"? <hr/> : <></>}</Link>
+            <Link className="nav-link" onClick={()=> setMenu("Shop Women")} to = "/women">Shop Women {menu === "Shop Women"? <hr/> : <></>}</Link>
+            <Link className="nav-link" onClick={()=> setMenu("Shop Kids")}to = "/kids" >Shop Kids {menu === "Shop Kids"? <hr/> : <></>}</Link>
+            <Link className="nav-link" onClick={()=> setMenu("Contact Us")} to = "/contact">Contact Us {menu === "Contact Us"? <hr/> : <></>}</Link>
+          </div>
+          <button onClick={handleClickButton}>Sign In</button>
+          <img id = "cart_logo" src={cartLogo} alt="cart_logo"  onClick={handleClickCart}/>
+          <div className="count">{count}</div>
+        
       </nav>
     </>
   );
