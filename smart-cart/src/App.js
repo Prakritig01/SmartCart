@@ -5,6 +5,8 @@ import SignIn from "./Components/Pages/SignIn";
 import Cart from "./Components/Pages/Cart";
 import ShopCategory from "./Components/Pages/ShopCategory";
 import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
+import Footer from "./Components/Footer/Footer";
+<script src="https://kit.fontawesome.com/e092ab8587.js" crossorigin="anonymous"></script>
 
 const App = () => {
   return ( 
@@ -19,9 +21,8 @@ const App = () => {
         <Route path="/contact" element = {<Contact/>}></Route>
         <Route path="/signin" element = {<SignIn/>}></Route>
         <Route path="/cart" element = {<Cart/>}></Route>
-
       </Routes>
-    
+    <Footer/>
     </Router>
 
    
