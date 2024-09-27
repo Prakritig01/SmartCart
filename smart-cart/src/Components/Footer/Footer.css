@@ -1,6 +1,8 @@
 footer{
     margin: 0 auto;
     /* border: 1px solid black; */
+    background-color: #f8f9fb;
+    
 }
 .footer-logo{
     display: flex;
@@ -52,7 +54,10 @@ ul{
 }
 .copyright-para{
     margin: 1.4vw auto;
-    color: #61748b;
-    
+    color: #61748b; 
+}
+
+.icons:hover{
+    transform: scale(1.2);
 }
 

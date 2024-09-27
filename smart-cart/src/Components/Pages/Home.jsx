@@ -1,9 +1,12 @@
+import Hero from './../Hero/Hero';
+import Trending from '../Trending/Trending';
 const Home = () => {
-    return ( 
-        <>
-        <h1>Home Page.</h1>
-        </>
-     );
-}
- 
+  return (
+    <>
+      <Hero/>
+      <Trending/>
+    </>
+  );
+};
+
 export default Home;

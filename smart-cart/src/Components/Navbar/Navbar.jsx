@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   let count = 0;
-  let [menu,setMenu] = useState("");
+  let [menu,setMenu] = useState("Shop All");
   console.log("value of menu is", menu);
   const navigate = useNavigate();
 
@@ -33,7 +33,7 @@ const Navbar = () => {
             <Link className="nav-link" onClick={()=> setMenu("Shop Kids")}to = "/kids" >Shop Kids {menu === "Shop Kids"? <hr/> : <></>}</Link>
             <Link className="nav-link" onClick={()=> setMenu("Contact Us")} to = "/contact">Contact Us {menu === "Contact Us"? <hr/> : <></>}</Link>
           </div>
-          <button onClick={handleClickButton}>Sign In</button>
+          <button onClick={handleClickButton} >Sign In</button>
           <img id = "cart_logo" src={cartLogo} alt="cart_logo"  onClick={handleClickCart}/>
           <div className="count">{count}</div>
         
