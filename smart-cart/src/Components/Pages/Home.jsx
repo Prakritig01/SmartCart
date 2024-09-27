@@ -1,7 +1,8 @@
 import Hero from './../Hero/Hero';
 import Trending from '../Trending/Trending';
 import Offers from '../Offers/Offers';
-import NewCollection from '../New_Collection/new_collection'
+import NewCollection from '../New_Collection/new_collection';
+import NewsLetter from '../NewsLetter/NewsLetter';
 const Home = () => {
   return (
     <>
@@ -9,6 +10,7 @@ const Home = () => {
       <Trending/>
       <Offers/>
       <NewCollection/>
+      <NewsLetter/>
     </>
   );
 };
