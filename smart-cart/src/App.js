@@ -1,9 +1,9 @@
 import Navbar from "./Components/Navbar/Navbar";
-import Home from "./Components/Pages/Home";
-import Contact from "./Components/Pages/Contact";
-import SignIn from "./Components/Pages/SignIn";
-import Cart from "./Components/Pages/Cart";
-import ShopCategory from "./Components/Pages/ShopCategory";
+import Home from "./Pages/Home";
+import Contact from "./Pages/Contact";
+import SignIn from "./Pages/SignIn";
+import Cart from "./Pages/Cart";
+import ShopCategory from "./Pages/ShopCategory";
 import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 import "./App.css";

@@ -1,4 +1,4 @@
-import offer_image from './../Assests/exclusive_image.png';
+import offer_image from './../Assests/offers/exclusive_image.png';
 import './Offer.css'
 const Offers = () => {
     return ( 

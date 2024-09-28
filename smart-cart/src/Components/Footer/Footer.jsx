@@ -1,7 +1,7 @@
 import logo from "./../Assests/logo.png";
-import whatsapp_logo from "./../Assests/whatsapp_icon.png";
-import instagram_logo from "./../Assests/instagram_icon.png";
-import pinterest_icon from "./../Assests/pinterest_icon.png";
+import whatsapp_logo from "./../Assests/footer/whatsapp_icon.png";
+import instagram_logo from "./../Assests/footer/instagram_icon.png";
+import pinterest_icon from "./../Assests/footer/pinterest_icon.png";
 import "./Footer.css";
 
 const Footer = () => {

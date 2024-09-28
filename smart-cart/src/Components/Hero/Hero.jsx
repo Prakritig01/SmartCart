@@ -1,6 +1,6 @@
-import Hero_icon from "./../Assests/hero_image.png";
-import hand_icon from "./../Assests/hand_icon.png";
-import arrow from "./../Assests/arrow_icon.png";
+import Hero_icon from "./../Assests/hero/hero_image.png";
+import hand_icon from "./../Assests/hero/hand_icon.png";
+import arrow from "./../Assests/hero/arrow_icon.png";
 import "./Hero.css";
 const Hero = () => {
   return (
