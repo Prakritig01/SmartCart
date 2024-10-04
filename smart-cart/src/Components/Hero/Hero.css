@@ -13,10 +13,9 @@
 
 .hero_icon{
     position: relative;
-    /* top: 1vw; */
     bottom: 2vw;
     left : 57.2vw;
-    /* z-index: ; */
+    height : 120vh;
     
 }
 @keyframes fadeInAnimation{

@@ -1,6 +1,6 @@
 import "./Navbar.css";
-import logo from "./../Assests/logo.png";
-import cartLogo from "./../Assests/cart_icon.png";
+import logo from "./../Assests/nav_bar/logo.png";
+import cartLogo from "./../Assests/nav_bar/cart_icon.png";
 import { Link } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";

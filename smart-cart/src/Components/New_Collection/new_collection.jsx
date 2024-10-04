@@ -10,7 +10,7 @@ const New_collection = () => {
             </div>
             <div className="new_collection_items">
                 {new_collection_array.map((collection,i)=>{
-                    return <Item item = {collection} id = {i} />
+                    return <Item key = {collection.id} item = {collection} id = {i} />
                 })}
             </div>
         </div>

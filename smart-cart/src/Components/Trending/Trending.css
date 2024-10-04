@@ -2,12 +2,14 @@
     padding: 40px 20px;
     background-color: #f9f9f9;
     text-align: center;
+    
   }
   
   .trending_heading h1 {
     font-size: 36px;
     color: #333;
     margin-bottom: 20px;
+    margin-top: 5vh;
   }
   
   .trending_heading hr {

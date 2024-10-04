@@ -1,4 +1,4 @@
-import logo from "./../Assests/logo.png";
+import logo from "./../Assests/nav_bar/logo.png";
 import whatsapp_logo from "./../Assests/footer/whatsapp_icon.png";
 import instagram_logo from "./../Assests/footer/instagram_icon.png";
 import pinterest_icon from "./../Assests/footer/pinterest_icon.png";

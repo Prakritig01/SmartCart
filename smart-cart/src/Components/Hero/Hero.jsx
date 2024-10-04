@@ -7,12 +7,12 @@ const Hero = () => {
     <>
       <div className="landing-page-div">
         <div className="right-part">
-          <img src={Hero_icon} alt="hero_image" class="hero_icon" />
+          <img src={Hero_icon} alt="hero_image" className="hero_icon" />
         </div>
 
         <div className="left-part">
           <div className="first-line">
-            <img src={hand_icon} alt="hand_icon" class="hand_icon" />
+            <img src={hand_icon} alt="hand_icon" className="hand_icon" />
             <p>new</p> <br />
           </div>
 
