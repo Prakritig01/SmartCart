@@ -7,7 +7,7 @@ const ShopContext = createContext(null);
     const products = all_products;
     return(
         <ShopContext.Provider value={products} >
-            {children}
+            {children }
         </ShopContext.Provider>
     )
 }
