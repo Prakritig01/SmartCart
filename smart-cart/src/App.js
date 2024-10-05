@@ -9,8 +9,8 @@ import Footer from "./Components/Footer/Footer";
 import men_banner from "./Components/Assests/banner/banner_men.png";
 import women_banner from "./Components/Assests/banner/banner_women.png";
 import kids_banner from "./Components/Assests/banner/banner_kid.png";
-
 import "./App.css";
+import Login from "./Pages/Login";
 
 <script
   src="https://kit.fontawesome.com/e092ab8587.js"
@@ -30,6 +30,7 @@ const App = () => {
           <Route path="/kids" element={<ShopCategory category="Kid" banner={kids_banner} />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/signin" element={<SignIn />}></Route>
+          <Route path="/login" element = {<Login/>} ></Route>
           <Route path="/cart" element={<Cart />}></Route>
         </Routes>
 
