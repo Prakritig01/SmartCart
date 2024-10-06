@@ -5,7 +5,7 @@ const Breadcrumb = ({product}) => {
         <div className="breadcrum">
             <a href="/">HOME</a>
             <img src= {breadcrum_arrow} alt="bread_crum" />
-            <a href= {`/${product.category.toLowerCase()}`}>SHOP {`${product.category.toUpperCase()}`}</a>
+            <a href= {`/${product.category.toLowerCase()}`}> {`${product.category.toUpperCase()}`}</a>
             <img src= {breadcrum_arrow} alt="bread_crum" />
             <span>{product.name}</span>
         </div>
