@@ -4,7 +4,7 @@ import './CSS/ShopCategory.css';
 import dropdown from './../Components/Assests/dropdown_icon.png';
 import Item from "../Components/Item/Item";
 const ShopCategory = ({category,banner}) => {
-    const all_products = useContext(ShopContext);
+    const {all_products} = useContext(ShopContext);
     const category_wise_products = all_products.filter(product => product.category === category);
     // console.log(category_wise_products);
 

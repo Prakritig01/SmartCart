@@ -31,7 +31,7 @@ function getRelatedProductsFromCategory(category,all_products) {
 }
 
 const RelatedProducts = ({category}) => {
-    const all_products = useContext(ShopContext);
+    const {all_products} = useContext(ShopContext);
     //ab humei all_products mei se related products vaala array chahiye jiske liyehumne alag function likh diya
     const related_products_array = getRelatedProductsFromCategory(category,all_products);
     return ( 

@@ -4,7 +4,7 @@ import all_products from "../Components/Assests/all_products";
 const ShopContext = createContext(null);
 
  const ShopContextProvider = ({children}) =>{
-    const products = all_products;
+    const products = {all_products};
     return(
         <ShopContext.Provider value={products} >
             {children }
