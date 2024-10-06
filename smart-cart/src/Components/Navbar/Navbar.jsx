@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 const Navbar = () => {
   let count = 0;
   let [menu,setMenu] = useState("Shop All");
-  console.log("value of menu is", menu);
+  // console.log("value of menu is", menu);
   const navigate = useNavigate();
 
   const handleClickButton = () =>{

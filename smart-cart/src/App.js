@@ -11,6 +11,8 @@ import women_banner from "./Components/Assests/banner/banner_women.png";
 import kids_banner from "./Components/Assests/banner/banner_kid.png";
 import "./App.css";
 import Login from "./Pages/Login";
+import Breadcrumb from "./Components/Breadcrumb/Breadcrumb";
+import Product from "./Pages/Product";
 
 <script
   src="https://kit.fontawesome.com/e092ab8587.js"
@@ -32,6 +34,7 @@ const App = () => {
           <Route path="/signin" element={<SignIn />}></Route>
           <Route path="/login" element = {<Login/>} ></Route>
           <Route path="/cart" element={<Cart />}></Route>
+          <Route path = "/product/:id" element= {<Product/>}></Route>
         </Routes>
 
         <Footer />
