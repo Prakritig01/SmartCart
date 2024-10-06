@@ -3,6 +3,7 @@ import Breadcrumb from "../Components/Breadcrumb/Breadcrumb";
 import { useContext } from "react";
 import { ShopContext } from "../Context/Shopcontext";
 import ProductDisplay from "../Components/ProductDisplay/ProductDisplay";
+import DescriptionBox from "../Components/Description_box/Description";
 const Product = () => {
   const { id } = useParams();
   const all_products = useContext(ShopContext);
@@ -16,6 +17,7 @@ const Product = () => {
       {/* <h1>Product page : {id}</h1> */}
       <Breadcrumb product={single_product} />
       <ProductDisplay product={single_product} />
+      <DescriptionBox/>
     </>
   );
 };
