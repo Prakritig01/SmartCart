@@ -1,17 +1,31 @@
-import { createContext,useState } from "react";
+import { createContext,useEffect,useState } from "react";
 import all_products from "../Components/Assests/all_products";
 
 const ShopContext = createContext(null);
 
 const getDefaultCart = () =>{
-    let cart = {};
-    return cart;
-}
+    const cart = localStorage.getItem('cart');
+    if (!cart) {
+        return {}; // Return an empty object if no cart exists
+    }
+    
+    try {
+        return JSON.parse(cart); // Attempt to parse the cart
+    } catch (error) {
+        console.error("Failed to parse cart from localStorage:", error);
+        return {}; // Return an empty object on error
+    }
+} 
 
 
  const ShopContextProvider = ({children}) =>{
     const products = {all_products};
     const [cart,setCart] = useState(getDefaultCart());
+
+
+    useEffect(()=>{
+        localStorage.setItem('cart',JSON.stringify(cart));
+    },[cart]);
 
     const addProductToCart = (productId) =>{
         console.log("Product id in shopcontext", productId);
