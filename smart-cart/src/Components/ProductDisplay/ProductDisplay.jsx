@@ -1,10 +1,17 @@
 import './ProductDisplay.css';
-
+import { ShopContext } from '../../Context/Shopcontext';
+import { useContext } from 'react';
 import star_icon from './../Assests/star/star_icon.png';
 import star_dull_icon from './../Assests/star/star_dull_icon.png';
 
 const ProductDisplay = ({ product }) => {
+    const { addProductToCart } = useContext(ShopContext);
 
+    function addToCart(id){
+        console.log("This is the product id",id);
+
+        addProductToCart(id);
+    }
     return (
         <div className="productdisplay">
             <div className="productdisplay-left">
@@ -49,7 +56,7 @@ const ProductDisplay = ({ product }) => {
                         <div className="productdisplay-right-size-item">XXL</div>
                     </div>
                 </div>
-                <button className='productdisplay-button'>Add to Cart</button>
+                <button onClick = {()=> addToCart(product.id)} className='productdisplay-button'>Add to Cart</button>
                 <p className="productdisplay-right-category">
                     <span>Category :</span> {product.category ? product.category : "Not Available"}
                 </p>
